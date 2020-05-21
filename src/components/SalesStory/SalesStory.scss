@@ -1,0 +1,48 @@
+.sales-story{
+	padding: 60px 0 0;
+	&__wrapper{
+		display: flex;
+		flex-direction: column;
+		}
+	&__block{
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+		&:nth-child(odd){
+			flex-direction: row-reverse;
+			}
+		&:not(:last-child){
+			margin-bottom: 75px;
+			}
+		}
+	&__image{
+		flex-basis: 570px;
+		}
+	&__sidebar{
+		flex: 1;
+
+		max-width: 480px;
+		}
+	&__number{
+		margin-bottom: 29px;
+
+		letter-spacing: 3px;
+
+		color: $primary-purple-color;
+
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 1.33;
+		}
+	&__text{
+		color: #1e1e1e;
+
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 1.67;
+		}
+	&__title{
+		margin-bottom: 65px;
+		}
+	}
