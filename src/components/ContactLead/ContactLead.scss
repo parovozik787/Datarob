@@ -14,6 +14,8 @@
 	padding-top: 60px;
 	& * {
 		box-sizing: border-box;
+
+		font-size: 100%;
 		}
 	&__container{
 		display: flex;
@@ -23,17 +25,17 @@
 		margin-bottom: 59px;
 		}
 	&__block{
-		flex-basis: 600px;
+		flex: 1 1 51.28%;
 
 		padding-right: 100px;
 
 		}
 	&__title{
-		margin-bottom: 40px;
+		margin-bottom: 32px;
 
 		color: $primary-purple-color;
 
-		font-size: 45pt;
+		font-size: 34pt;
 		font-weight: 600;
 		line-height: 1.18;
 		}
@@ -42,7 +44,7 @@
 
 		color: $primary-gray-color;
 
-		font-size: 24pt;
+		font-size: 18pt;
 		line-height: 1.33;
 
 		}
@@ -51,7 +53,7 @@
 
 		margin-bottom: 20px;
 		& > :first-child{
-			margin-right: 65px;
+			margin-right: 68px;
 			}
 		}
 	&__link{
@@ -67,6 +69,7 @@
 
 		color: #606060;
 
+		font-size: 15pt;
 		font-weight: 600;
 
 		svg{
@@ -90,7 +93,7 @@
 
 			margin-bottom: 25px;
 
-			font-size: 22.5pt;
+			font-size: 17pt;
 			font-weight: 700;
 			line-height: 1.78;
 			span{
@@ -101,7 +104,7 @@
 			}
 		&--padding-smaller{
 			max-width: 210px;
-			padding-left: 55px;
+			padding-left: 43px;
 			}
 
 		}
@@ -112,14 +115,14 @@
 		box-sizing: border-box;
 		width: 100%;
 		margin-bottom: 16px;
-		padding: 9px 22px 7px;
+		padding: 8px 22px 8px;
 
 		color: $primary-black-color;
 		border: 3px solid rgba(137, 137, 233, 0.5);
 		border-radius: 10px;
 
 		font: {
-			size: 18pt;
+			size: 16pt;
 			weight: 400;
 			}
 		&[placeholder="Message"]{
@@ -139,7 +142,7 @@
 			color: rgba(45, 45, 45, 0.5);
 
 			font: {
-				size: 18pt;
+				size: 14pt;
 				weight: 300;
 				}
 			}
@@ -149,7 +152,7 @@
 
 		color: $primary-gray-color;
 
-		font-size: 24pt;
+		font-size: 18pt;
 		line-height: 1.33;
 		}
 	&__form-btn{
@@ -168,6 +171,8 @@
 
 		border-radius: 10px;
 		img{
+			display: block;
+
 			width: 100%;
 			height: 100%;
 
@@ -181,7 +186,8 @@
 		height: calc(100% - 41px);
 		}
 	&__slider-wrapper{
-		flex: 1;
+		flex: 1 1 48.72%;
+
 		}
 	&__scroll-down-link{
 		position: relative;
@@ -197,7 +203,7 @@
 		opacity: 0.36;
 		color: #2d2d2d5c;
 
-		font-size: 18pt;
+		font-size: 14pt;
 		svg{
 			position: absolute;
 			left: 50%;
@@ -254,4 +260,43 @@
 		-ms-touch-action: pan-y;
 		touch-action: pan-y;
 		}
+	}
+
+
+@media (max-width: 992px){
+	.contact-lead{
+		&__container{
+			flex-direction: column;
+			}
+		&__block{
+			margin-bottom: 50px;
+			padding-right: 0;
+			}
+		&__slider-inner{
+			height: 100%;
+			}
+		&__link--font-size-bigger{
+			flex-direction: column;
+			}
+		&__link-block{
+			flex-direction: column;
+			& > :first-child{
+				margin-right: 0;
+				margin-bottom: 30px;
+				}
+			}
+		&__link--padding-smaller{
+			max-width: none;
+			padding-left: 69px;
+			}
+		}
+	.tns {
+		&-nav{
+			bottom: -20px;
+			left: 50%;
+
+			transform: translateX(-50%);
+			}
+		}
+
 	}

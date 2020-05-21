@@ -38,11 +38,33 @@
 	&__text{
 		color: #1e1e1e;
 
-		font-size: 24px;
+		font-size: 18pt;
 		font-weight: 300;
-		line-height: 1.67;
 		}
 	&__title{
 		margin-bottom: 65px;
+		}
+	}
+
+
+@media (max-width: 992px){
+	.sales-story{
+		&__block{
+			flex-direction: column-reverse;
+
+			margin-bottom: 50px;
+			&:nth-child(odd){
+				flex-direction: column-reverse;
+				}
+			}
+		&__sidebar{
+			max-width: none;
+			margin-bottom: 30px;
+			}
+		&__image{
+			flex-basis: 100%;
+
+			width: 100%;
+			}
 		}
 	}
