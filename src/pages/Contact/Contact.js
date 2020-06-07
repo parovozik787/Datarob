@@ -14,8 +14,8 @@ document.addEventListener(
   },
   { passive: false }
 );
-
-function map() {
+var map;
+function mapInizialization() {
   let mapping = document.getElementById("map");
   if (!mapping) return;
   let coordinates = { lat: 47.212325, lng: 38.933663 };
@@ -225,10 +225,10 @@ function map() {
     },
   ];
   let mapOptions = {
-    center: coordinates,
+    center: { lat: -34.397, lng: 150.644 },
     styles: styles,
   };
-  let map = new google.maps.Map(mapping, mapOptions);
+  map = new google.maps.Map(mapping, mapOptions);
 }
 
-map();
+mapInizialization();
