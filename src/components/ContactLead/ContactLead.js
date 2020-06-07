@@ -3,9 +3,9 @@ import { tns } from "tiny-slider/src/tiny-slider";
 export const secondSlider = () => {
   tns({
     SwipeAngle: "false",
-    autoplay: "true",
+    // autoplay: "false",
     autoplayButtonOutput: false,
-    autoplayTimeout: 3000,
+    // autoplayTimeout: 3000,
     center: "true",
     container: ".contact-lead__slider-inner",
     controls: false,

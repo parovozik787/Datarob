@@ -25,7 +25,7 @@
 		margin-bottom: 59px;
 		}
 	&__block{
-		flex: 1 1 51.28%;
+		flex: 1 1 51.30%;
 
 		padding-right: 100px;
 
@@ -186,7 +186,8 @@
 		height: calc(100% - 41px);
 		}
 	&__slider-wrapper{
-		flex: 1 1 48.72%;
+		//flex: 1 1 48.72%;
+		flex: 1 1 570px;
 
 		}
 	&__scroll-down-link{
