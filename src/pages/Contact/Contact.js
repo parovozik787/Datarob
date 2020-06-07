@@ -14,11 +14,10 @@ document.addEventListener(
   },
   { passive: false }
 );
-var map;
+
 function mapInizialization() {
   let mapping = document.getElementById("map");
   if (!mapping) return;
-  let coordinates = { lat: 47.212325, lng: 38.933663 };
   let styles = [
     {
       elementType: "geometry",
@@ -229,7 +228,7 @@ function mapInizialization() {
     zoom: 2,
     styles: styles,
   };
-  map = new google.maps.Map(mapping, mapOptions);
+  let map = new google.maps.Map(mapping, mapOptions);
 }
 
 mapInizialization();
