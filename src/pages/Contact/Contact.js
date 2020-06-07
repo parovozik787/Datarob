@@ -226,6 +226,7 @@ function mapInizialization() {
   ];
   let mapOptions = {
     center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
     styles: styles,
   };
   map = new google.maps.Map(mapping, mapOptions);
